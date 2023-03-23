@@ -8,9 +8,9 @@ if (marks >= 79) {
     } else if (marks >=49 && marks < 59) {
       console.log("C");
     } else if (marks >= 40 && marks < 49)  {
-        console.log("D")
+        console.log("D");
     } else if (marks < 40) {
-        console.log("E")
+        console.log("E");
     }
     console.log(marks);
 
@@ -18,13 +18,15 @@ if (marks >= 79) {
 
 
     //speedlimit
-    const speedlimit = 70;
+    const speedLimit = 70;
     const kmPerDemeritPoint = 5;
 
-    function calculaterDemeritPoints(sped) {
+    function calculaterDemeritPoints(speed) {
         if (speed <= speedLimit) {
             console.log("Ok");
         } else {
+            const demeritPoints = Math.floor((speed - speedLimit) / kmPerDemeritPoint);
+            if (demeritPoints >= 12) }
             console.log("License suspended");
             { eslse {
                 console.log('Demerit points: ${demeritpoints}');
@@ -43,7 +45,7 @@ if (marks >= 79) {
     function individualNetSalary(grossSalary) {
         const tax = 500;
         const nhif = 500;
-        const nssf - 500;
+        const nssf = 500;
         const netSalary = grossSalary - tax - nhif - nssf;
         return netSalary;
     }
