@@ -1,0 +1,31 @@
+Readme for the code above
+
+This code consists of three different functions that perform different tasks:
+1. Student Marks
+
+The first function studentsMarks takes in user input for the marks obtained by a student and returns the corresponding grade based on the mark. The grading system used is:
+
+    A: 79 and above
+    B: 60 to 78
+    C: 49 to 59
+    D: 40 to 48
+    E: Less than 40
+
+2. Speed Limit
+
+The second function calculateDemeritPoints takes in the speed of a driver and compares it with the speed limit. If the driver's speed is within the limit, the console prints "Ok". If the speed exceeds the limit, the function calculates the number of demerit points to be awarded based on the excess speed. A driver receives 1 demerit point for every 5 km/h above the speed limit. If a driver accumulates 12 or more demerit points, their license is suspended.
+3. Net Salary
+
+The third function individualNetSalary takes in a gross salary and subtracts taxes, National Health Insurance Fund (NHIF) deductions, and National Social Security Fund (NSSF) deductions to calculate the net salary of an individual. The tax, NHIF, and NSSF deductions are set to a constant value of 500 in this code.
+
+To use any of these functions, simply call the function and provide the required parameters. The output will be printed to the console.// Example usage of studentsMarks function
+let marks = prompt("Enter the student marks");
+studentsMarks(marks);
+
+// Example usage of calculateDemeritPoints function
+calculateDemeritPoints(60); // Output: Ok
+calculateDemeritPoints(75); // Output: Demerit points: 1
+calculateDemeritPoints(100); // Output: Demerit points: 6
+
+// Example usage of individualNetSalary function
+console.log(individualNetSalary(913000)); // Output: 912000
